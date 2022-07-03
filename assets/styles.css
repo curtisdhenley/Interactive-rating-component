@@ -1,0 +1,163 @@
+:root {
+	--very-dark-blue: hsl(216, 12%, 8%);
+	--dark-blue: hsl(213, 19%, 18%);
+    --secondary-dark-blue: hsl(216, 24%, 12%); /* it was impossible to see star background with out this second color */
+	--medium-gray: hsl(216, 12%, 54%);
+	--light-gray:  hsl(217, 12%, 63%);
+	--orange: hsl(25, 97%, 53%);
+	--white: hsl(0, 0%, 100%);
+    --font-size: 15px;
+}
+
+/* general styling */
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--very-dark-blue);
+    margin: 0;
+    min-width: 375px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+h1, .submitBtn {
+    color: var(--white);
+    font-weight: 700;
+}
+
+h1 {
+    margin: 1rem 0;
+}
+
+p {
+    color: var(--light-gray);
+    font-size: var(--font-size);
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+/* container styling */
+.container, .star, .input, .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    height: 100vh;
+}
+
+/* card styling */
+.card {
+    background: radial-gradient(var(--dark-blue), var(--secondary-dark-blue) 90%);
+    width: 425px;
+    height: 425px;
+    border-radius: 3%;
+    box-sizing: border-box;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stars-container, .input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.star, .input {
+    background-color: var(--dark-blue);
+    color: var(--light-gray);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#s1 {
+    visibility: visible;
+}
+
+#s2, #s3, #s4, #s5 {
+    visibility: hidden;
+}
+
+.input {
+    display: inline;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.input, .submitBtn {
+    outline: none;
+    border: none;
+}
+
+.input:hover {
+    background-color: var(--orange);
+	color: var(--white);
+	cursor: pointer;
+}
+
+.input:focus {
+    background-color: var(--medium-gray);
+    color: var(--white);
+}
+
+.submitBtn {
+    letter-spacing: 2px;
+    background-color: var(--orange);
+    border-radius: 50px;
+    width: 100%;
+    height: 45px;
+}
+
+.submitBtn:hover:hover {
+    color: var(--orange);
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+/* thanks msg */
+.rating-display {
+    background-color: var(--dark-blue);
+    width: auto;
+    border-radius: 20px;
+    margin: 25px auto;
+    padding: 4px 10px;
+}
+
+.rating-display p {
+    color: var(--orange);
+    display: inline-block;
+    line-height: 0;
+}
+
+.thanks-msg {
+    text-align: center;
+}
+
+.thanks-msg h1 {
+    margin-top: 0;
+}
+
+/* display star selection */
+.isVisible {
+    display: none;
+}
+
+/* attribution section */
+.white-text {
+    color: var(--white);
+}
+
+.attribution a {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+/* media queries */
+@media only screen and (max-width: 425px) {
+    .container {
+        padding: 10px;
+    }
+}
