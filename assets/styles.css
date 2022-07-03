@@ -1,0 +1,15 @@
+:root {
+	--very-dark-blue: hsl(216, 12%, 8%);
+	--dark-blue: hsl(213, 19%, 18%);
+	--alternative-dark-blue: #181E27;	/* I added this color because I think the dark blue of the style-guide is not the same as the design */
+	--medium-gray: hsl(216, 12%, 54%);
+	--light-gray:  hsl(217, 12%, 63%);
+	--orange: hsl(25, 97%, 53%);
+	--white: hsl(0, 0%, 100%);
+}
+
+/* general styling */
+body {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
