@@ -43,7 +43,7 @@ p {
     align-items: center;
 }
 .container {
-    height: 100vh;
+    height: 90vh;
 }
 
 /* card styling */
@@ -73,12 +73,12 @@ p {
     height: 50px;
 }
 
-#s1 {
-    visibility: visible;
-}
-
-#s2, #s3, #s4, #s5 {
+.star-visibility {
     visibility: hidden;
+} 
+
+.thanks-visibility, .input-visibility {
+    display: none;
 }
 
 .input {
@@ -98,7 +98,7 @@ p {
 	cursor: pointer;
 }
 
-.input:focus {
+.selected:focus {
     background-color: var(--medium-gray);
     color: var(--white);
 }
@@ -111,7 +111,7 @@ p {
     height: 45px;
 }
 
-.submitBtn:hover:hover {
+.submitBtn:hover {
     color: var(--orange);
     background-color: var(--white);
     cursor: pointer;
@@ -138,11 +138,6 @@ p {
 
 .thanks-msg h1 {
     margin-top: 0;
-}
-
-/* display star selection */
-.isVisible {
-    display: none;
 }
 
 /* attribution section */

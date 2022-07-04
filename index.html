@@ -33,14 +33,14 @@
   </head>
   <body>
     <!-- Rating state start -->
-    <div class="container">
+    <div id="input-container" class="container">
       <section class="card">
         <div class="stars-container">
           <div id="s1" class="star"><img src="./images/icon-star.svg" /></div>
-          <div id="s2" class="star"><img src="./images/icon-star.svg" /></div>
-          <div id="s3" class="star"><img src="./images/icon-star.svg" /></div>
-          <div id="s4" class="star"><img src="./images/icon-star.svg" /></div>
-          <div id="s5" class="star"><img src="./images/icon-star.svg" /></div>
+          <div id="s2" class="star star-visibility"><img src="./images/icon-star.svg" /></div>
+          <div id="s3" class="star star-visibility"><img src="./images/icon-star.svg" /></div>
+          <div id="s4" class="star star-visibility"><img src="./images/icon-star.svg" /></div>
+          <div id="s5" class="star star-visibility"><img src="./images/icon-star.svg" /></div>
         </div>
         <!-- star container close -->
 
@@ -54,11 +54,11 @@
         <!-- text container close -->
 
         <div class="input-container">
-          <button id="i1" class="input">1</button>
-          <button id="i2" class="input">2</button>
-          <button id="i3" class="input">3</button>
-          <button id="i4" class="input">4</button>
-          <button id="i5" class="input">5</button>
+          <input id="btn1" type="button" value="1" class="input selected" onclick="displayStars()">
+          <input id="btn2" type="button" value="2" class="input selected" onclick="displayStars()">
+          <input id="btn3" type="button" value="3" class="input selected" onclick="displayStars()">
+          <input id="btn4" type="button" value="4" class="input selected" onclick="displayStars()">
+          <input id="btn5" type="button" value="5" class="input selected" onclick="displayStars()">
         </div>
         <!-- input container close -->
         <button class="submitBtn">Submit</button>
@@ -70,7 +70,7 @@
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <div class="container isVisible">
+    <div id="thanks-container" class="container thanks-visibility">
       <section class="card">
         <div class="img-container">
           <img src="./images/illustration-thank-you.svg" />
